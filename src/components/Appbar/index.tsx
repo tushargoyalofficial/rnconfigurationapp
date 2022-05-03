@@ -6,7 +6,7 @@ interface IProps {
   title: string;
 }
 
-const Header: FC<IProps> = ({backgroundColor, title}) => (
+const Appbar: FC<IProps> = ({backgroundColor, title}) => (
   <View style={[styles.container, {backgroundColor}]}>
     <Text style={styles.title}>{title}</Text>
   </View>
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(Header);
+export default memo(Appbar);
